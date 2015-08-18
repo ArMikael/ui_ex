@@ -1,0 +1,43 @@
+.wrap {
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+.main-content {
+	margin-top: 100px;
+	height: 100%;
+}
+
+.draggable-item {
+
+}
+
+.components {
+	background-color: gold;
+	height: 200px;
+	padding: 40px;
+	border-radius: 8px;
+}
+
+.label {
+	display: block;
+	width: 100px;
+	height: 36px;
+	font-size: 24px;
+	margin: 10px;
+	z-index: 999;
+}
+
+.flow-panel {
+	width: 960px;
+	height: 200px;
+	background-color: pink;
+
+	position: absolute;
+	bottom: 100px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	border-radius: 8px;
+}
