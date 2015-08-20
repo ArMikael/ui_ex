@@ -13,18 +13,140 @@
 
 	<div class="wrap">
 		<div class="main-content">
-		
+
 			<div class="components">
-				<a class="draggable-item label label-primary">One</a>
-				<a class="draggable-item label label-danger">Two</a>
+
+				<!-- Button -->
+				<a class="label draggable-item label-primary" id="dragBtn">Close</a>
+
+				<div class="modal-window">
+					<div class="modal-content">
+
+						<select name="" class="select-box" id="selectBox1">
+							<option value="label-primary">Primary (Blue)</option>
+							<option value="label-danger">Danger (Red)</option>
+						</select>
+
+						<div class="btns-container" id="modalBtns1">
+							<button type="button" class="btn btn-default btn-md modal-btn
+								ok-btn">OK</button>
+							<button type="button" class="btn btn-default btn-md modal-btn
+								cancel-btn">Cancel</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Progress Bar -->
+				<div class="progress draggable-item">
+					<div class="progress-bar progress-bar-success progress-bar-striped" id="dragProgress"
+						role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+						<span class="sr-only">40% Complete (success)</span>
+					</div>
+				</div>
+
+				<div class="modal-window">
+					<div class="modal-content">
+
+						<select name="" class="select-box" id="selectBox2">
+							<option value="40%">40% progress</option>
+							<option value="80%">80% progress</option>
+						</select>
+
+						<div class="btns-container" id="modalBtns2">
+							<button type="button" class="btn btn-default btn-md modal-btn
+								ok-btn">OK</button>
+							<button type="button" class="btn btn-default btn-md modal-btn
+								cancel-btn">Cancel</button>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Thumbnail -->
+				<div class="col-xs-6 col-md-3 draggable-item">
+					<a href="#" class="thumbnail">
+						<img src="img/coking_pot.png" class="unflipped" id="dragThumbn" alt="Cooking pot">
+					</a>
+				</div>
+
+				<div class="modal-window">
+					<div class="modal-content">
+
+						<select name="" class="select-box" id="selectBox3">
+							<option value="unflipped">Normal</option>
+							<option value="flipped">Flipped</option>
+						</select>
+
+						<div class="btns-container" id="modalBtns3">
+							<button type="button" class="btn btn-default btn-md modal-btn
+								ok-btn">OK</button>
+							<button type="button" class="btn btn-default btn-md modal-btn
+								cancel-btn">Cancel</button>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Glyph Icon -->
+				<div class="glyphicon glyphicon-repeat draggable-item rotate-left" 
+					id="dragIcon" aria-hidden="true"></div>
+
+				<div class="modal-window">
+					<div class="modal-content">
+
+						<select name="" class="select-box" id="selectBox4">
+							<option value="rotate-left">Rotate left</option>
+							<option value="rotate-right">Rotate right</option>
+						</select>
+
+						<div class="btns-container" id="modalBtns4">
+							<button type="button" class="btn btn-default btn-md modal-btn
+								ok-btn">OK</button>
+							<button type="button" class="btn btn-default btn-md modal-btn
+								cancel-btn">Cancel</button>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Media Object -->
+				<div class="media draggable-item">
+					<div class="media-left" id="dragMedia">
+						<a href="#">
+							<img class="media-object" src="img/img_generic.png" alt="Generic Image">
+						</a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">Media heading</h4>
+						Media Text: Lorem ipsum dolor sit amet elit. Nihil voluptatibus magni modi, rerum commodi cupidita doloribus, ut officiis.
+					</div>
+				</div>
+
+				<div class="modal-window">
+					<div class="modal-content">
+
+						<select name="" class="select-box" id="selectBox5">
+							<option value="media-left">Left</option>
+							<option value="pull-right">Right</option>
+						</select>
+
+						<div class="btns-container" id="modalBtns5">
+							<button type="button" class="btn btn-default btn-md modal-btn
+								ok-btn">OK</button>
+							<button type="button" class="btn btn-default btn-md modal-btn
+								cancel-btn">Cancel</button>
+						</div>
+					</div>
+				</div>
+
 			</div>
 
 
 			<div class="flow-panel">
-				
+				<p class="flow-panel-text">Drop items here.</p>
 			</div>
 
-		</div>	
+		</div>
 	</div>
 
 	<!-- JS Includes -->
