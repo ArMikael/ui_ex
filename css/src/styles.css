@@ -1,12 +1,18 @@
+/* Main styles */
 .wrap {
 	width: 960px;
 	margin: 0 auto;
 }
 
-
 .main-content {
 	margin-top: 60px;
 	height: 100%;
+}
+
+h2 {
+	text-align: center;
+	color: gray;
+	opacity: 0.6;
 }
 
 .draggable-item {
@@ -19,20 +25,6 @@
 	height: 270px;
 	padding: 40px;
 	border-radius: 8px;
-}
-
-.label {
-	display: block;
-	width: 100px;
-	height: 36px;
-	font-size: 24px;
-	margin: 10px;
-	z-index: 999;
-}
-
-.input-group {
-	width: 200px;
-	margin: 10px;
 }
 
 .flow-panel {
@@ -57,14 +49,8 @@
 	opacity: .6;
 }
 
-.progress {
-	width: 500px;
-}
 
-.thumbnail img {
-	width: 60px;
-	transition: all 0.5s ease;
-}
+/* Modal window styles */
 
 .modal-window {
 	width: 300px;
@@ -111,6 +97,26 @@
 	margin-left: 10px;
 }
 
+
+/* Draggable elements styles */
+.label {
+	display: block;
+	width: 100px;
+	height: 36px;
+	font-size: 24px;
+	margin: 10px;
+	z-index: 999;
+}
+
+.progress {
+	width: 500px;
+}
+
+.thumbnail img {
+	width: 60px;
+	transition: all 0.5s ease;
+}
+
 .media {
 	width: 400px;
 	background-color: OldLace;
@@ -123,6 +129,12 @@
 	height: 80px;
 }
 
+.glyphicon {
+	font-size: 36px;
+}
+
+
+/* Elements interaction styles */
 
 .unflipped {
 	transition: all 0.5s ease;
@@ -131,10 +143,6 @@
 .flipped {
 	transform: rotateX(180deg);
 	transition: all 0.5s ease;
-}
-
-.glyphicon {
-	font-size: 36px;
 }
 
 .rotate-left {

@@ -20,9 +20,9 @@ $(document).ready(function() {
 	$('.draggable-item').on('dblclick', function(e) {
 
 		if (!$(this).next().hasClass('visible')) {
-			$(this).next().fadeIn().toggleClass('visible');
+			$(this).next().fadeIn('fast').toggleClass('visible');
 		} else {
-			$(this).next().fadeOut().toggleClass('visible');
+			$(this).next().fadeOut('fast').toggleClass('visible');
 		}
 	});
 
@@ -30,9 +30,10 @@ $(document).ready(function() {
 	// Modal Window Functional Buttons
 	var $selectedValue;
 
+	// Clicking OK on Modal window 
 	$('.ok-btn').on('click', function() {
-		console.log($(this).parent().attr('id'))
 
+		// Checking which modal was activated and running specific function
 		if ($(this).parent().attr('id') === 'modalBtns1') {
 			changeBtnStyle();
 
@@ -44,7 +45,7 @@ $(document).ready(function() {
 
 		} else if ($(this).parent().attr('id') === 'modalBtns4') {
 			changeIconStyle();
-			
+
 		} else if ($(this).parent().attr('id') === 'modalBtns5') {
 			changeMediaStyle();
 		}
@@ -104,8 +105,9 @@ $(document).ready(function() {
 	} 
 
 
+	// Closing modal on clicking "Cancel" button
 	$('.cancel-btn').on('click', function() {
-		$(this).closest('.modal-window').fadeOut().removeClass('visible');
+		$(this).closest('.modal-window').fadeOut('fast').removeClass('visible');
 	});
 
 
